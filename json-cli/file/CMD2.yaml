@@ -1,0 +1,14 @@
+CMD2:
+    - cmd: set this is  <enable|disable>
+      help: set this is
+      web: yes
+      file: yes
+      debug: no 
+      rpc: cli_set_is
+   
+    - cmd: set this am <gps|ntp|disable>
+      help: set this am
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_set_am

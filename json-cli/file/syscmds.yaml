@@ -1,0 +1,105 @@
+system:
+    - cmd: reboot
+      help: reboot system
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_reboot_system
+
+    - cmd: reset system [quiet]
+      help: restart the board
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_reset_system
+
+    - cmd: restore configuration default [quiet]
+      help: restore the default configuration ,and restart the board
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_restore_configuration
+
+    - cmd: save configuration
+      help: save configuration
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_save_config
+
+    - cmd: show configuration
+      help: show configuration
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_show_config_file
+
+    - cmd: show system
+      help: show information about the system
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_show_system
+
+    - cmd: show system verbose
+      help: show information about the system
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_show_system_verbose
+    
+    - cmd: show board info
+      help: show information about the board
+      web: yes
+      file: yes
+      debug: no 
+      rpc: cli_show_board_info
+    
+    - cmd: httpd <start|restart> [port {int:integer}]
+      help: start or restart httpd service
+      web: yes
+      file: yes
+      debug: no 
+      rpc: cli_httpd_start_restrat
+    
+    - cmd: httpd stop
+      help: stop httpd service
+      web: yes 
+      file: yes
+      debug: no 
+      rpc: cli_httpd_stop
+    
+    - cmd: httpd restore configuration
+      help: restore httpd configuration
+      web: yes
+      file: yes
+      debug: no 
+      rpc: cli_httpd_restore_configuration
+    
+    - cmd: httpd status
+      help: show the status of the httpd
+      web: yes
+      file: yes
+      debug: no 
+      rpc: cli_get_httpd_status
+
+    - cmd: show failover [verbose]
+      help: show failover
+      web: yes 
+      file: yes
+      debug: no
+      rpc: cli_show_failover
+
+    - cmd: show backup [verbose]
+      help: show backup
+      web: yes
+      file: yes
+      debug: no 
+      rpc: cli_show_backup
+
+    - cmd: exitshell 
+      help: exit shell
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_exit_shell

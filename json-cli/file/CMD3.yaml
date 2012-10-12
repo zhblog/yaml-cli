@@ -1,0 +1,28 @@
+CMD3:
+    - cmd: set userdata <int1:integer> offset <head|l2|l3> <int2:integer>
+      help: set userdata <0..7> offset [head|l2|l3] <0..127>
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_set_user_data
+    
+    - cmd: show stage2 userdata offset
+      help: show userdata offset
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_show_udf
+ 
+    - cmd: show ruleset [<ruleset_name:string>]
+      help: show information about ruleset
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_show_ruleset
+    
+    - cmd: add ruleset <ruleset_name:string> <rulenum:rulenum_reg> {<protocol=protocol_reg>,<ipversion=ipversion_reg>,<interface=port_single>,<sip=ipmask_reg>,<dip=ipmask_reg>,<sport=classport_reg>,<dport=classport_reg>,<tcpflag=tcpflag_reg>,<ud0=ud_reg>,<ud1=ud_reg>,<ud2=ud_reg>,<ud3=ud_reg>,<ud4=ud_reg>,<ud5=ud_reg>,<ud6=ud_reg>,<ud7=ud_reg>,<ethertype=ethertype_reg>,<stage2=integer>}
+      help: add class entry to ruleset
+      web: yes
+      file: yes
+      debug: no 
+      rpc: cli_add_class_entry

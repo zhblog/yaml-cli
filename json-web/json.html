@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <script type="application/javascript" language="JavaScript" src="script/jquery-1.6.4.js">
+        </script>
+        <script type="application/javascript" language="JavaScript" src="script/jquery.print_r.js">
+        </script>
+        <script type="application/javascript" language="JavaScript" src="script/key.js">
+        </script>
+        <script type="application/javascript" language="JavaScript" src="script/list.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>JSON TEST</title>
+    </head>
+    <body onload="init()">
+        <h1 align="middle">commend highlights</h1>
+        <table border="3" bordercolor="yellow">
+            <tr>
+                <td width="50%">
+                    <textarea class="textarea" id="textid">
+                    </textarea>
+                </td>
+                <td width="20px">
+                    <input type="button" value="CHECK" onclick="check_allcmd()">
+                </td>
+                <td align="top" height="100px" bgcolor="#EFFFFF">
+                    <pre  id="res" name="fooname" class="res" style="border:2;border-bottom-color:black;display:none">
+                    </pre>
+                </td>
+            </tr>
+        </table>
+        <p>
+            ------------------------------
+        </p>
+        <div id="debug">
+            DEBUG MEG!
+        </div>
+        <p>
+            ------------------------------
+        </p>
+    </body>
+</html>

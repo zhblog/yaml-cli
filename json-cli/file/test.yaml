@@ -1,0 +1,8 @@
+test:
+    - cmd: set ruleset  {aa bb,cc dd}  
+      help: debug no help
+      web: yes
+      file: yes
+      debug: no 
+      rpc: cli_debug_add_class_entry
+    

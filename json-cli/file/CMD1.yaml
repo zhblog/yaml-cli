@@ -1,0 +1,42 @@
+CMD1:
+    - cmd: debug <int:integer>
+      help: debug no help
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_set_debug_flag
+
+    - cmd: r <int:integer> 
+      help: debug no help
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_r_int
+
+    - cmd: r <int1:integer> <int2:integer>
+      help: debug no help
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_r_int_int
+
+    - cmd: r <vsca|vscb> <int:integer>
+      help: debug no help
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_r_vsc
+
+    - cmd:  show <rulenum:rulenum_reg> subtable <int:integer>
+      help: debug no help
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_show_subtable
+
+    - cmd:  start capture <int:integer> <rx|tx>
+      help: debug no help
+      web: yes
+      file: yes
+      debug: no
+      rpc: cli_start_capture
